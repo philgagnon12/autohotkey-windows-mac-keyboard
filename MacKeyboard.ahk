@@ -139,8 +139,18 @@ Rtoggle := 1
 return
 #IfWinActive
 
-#Backspace::
+;Enter directory
+#Down::
+Send, {Enter}
+Return
+
+; Go up Directory
+#Up::
+Send, {Backspace}
+Return
+
 ;Move to trash
+#Backspace::
 Send, {Delete}
 Return
 
