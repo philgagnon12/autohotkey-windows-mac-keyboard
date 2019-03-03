@@ -91,6 +91,21 @@ Lwin & Tab::AltTab
 Send, {Home}
 Return
 
+; Cursor End of line
+#Right::
+Send, {End}
+Return
+
+; Cursor Begin line select
+#+Left::
+Send, +{Home}
+Return
+
+; Cursor End of line select
+#+Right::
+Send, +{End}
+Return
+
 ; Cursor Left word
 !Left::
 Send, ^{Left}
@@ -99,11 +114,6 @@ Return
 ; Cursor Left word select
 !+Left::
 Send, ^+{Left}
-Return
-
-; Cursor End of line
-#Right::
-Send, {End}
 Return
 
 ; Cursor word right
